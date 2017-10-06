@@ -21,11 +21,9 @@ Team GoldEye is aiming for several features that could benefit those who looking
 
 # How will it look
 
-[](https://bteable.com/watch/presentation-2-154733)
+![](https://github.com/HRSgoldeneye/goldeneye.io/blob/master/images/picture1.png)
 
-<img class="ui huge image" src="/images/picture1.png">
-
-<img class="ui huge image" src="/images/picture2.png">
+![](https://github.com/HRSgoldeneye/goldeneye.io/blob/master/images/picture2.png)
 
 # Installation/Deployment
 Laravel is being used as development tool and deployment might also be done through it as well.
