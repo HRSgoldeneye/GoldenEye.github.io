@@ -21,9 +21,6 @@ Team GoldEye is aiming for several features that could benefit those who looking
 
 # How will it look
 
-![](https://github.com/HRSgoldeneye/goldeneye.io/blob/master/images/picture1.png)
-
-![](https://github.com/HRSgoldeneye/goldeneye.io/blob/master/images/picture2.png)
 
 # Installation/Deployment
 Laravel is being used as development tool and deployment might also be done through it as well.
