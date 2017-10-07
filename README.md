@@ -1,4 +1,8 @@
-# GoldenEye
+# Table of Contents
+
+* [About GoldenEye](#About-GoldenEye)
+
+## About GoldenEye
 
 Our project submission for the 2017 Hawaii Annual Coding Challenge (HACC)
 
@@ -9,7 +13,7 @@ However, despite its openness, the webpage only provides the directories to the 
 If the statutes can be searched, displayed, and ordered with relevance, time saving and efficiency will be offered to the public.
 Team GoldEye is aiming for several features that could benefit those who looking for the statutes.
 
-### Such as..
+## Such as..
 
 * search mechanism based on the code numbers and words.
 
