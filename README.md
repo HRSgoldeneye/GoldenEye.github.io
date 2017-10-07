@@ -39,10 +39,10 @@ If the statutes can be searched, displayed, and ordered with relevance, time sav
 ![image](/images/picture2.png)
 
 
-# Installation/Deployment
+# Installation
 Laravel is being used as development tool and deployment might also be done through it as well.
 
-# About/Contact Us
+# About Us
 The team GoldenEye is one of the participants in [Hawaii Annual Code Challenge](http://hacc.hawaii.gov/) and 
 the team is formed with two people.
 
