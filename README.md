@@ -4,8 +4,8 @@
 * [Inspiration](#inspiration)
 * [Features](#features)
 * [How will it look](#how-will-it-look)
-* [Installation](installation)
-* [About Us](about-us)
+* [Installation](#installation)
+* [About Us](#about-us)
 
 ## About GoldenEye
 
