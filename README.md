@@ -21,7 +21,7 @@ Team GoldEye is aiming for several features that could benefit those who looking
 
 # How will it look
 
-![Image of Yaktocat](https://github.com/HRSgoldeneye/goldeneye.io/blob/master/images/picture2.png)
+![image](/images/picture1.png)
 
 
 # Installation/Deployment
