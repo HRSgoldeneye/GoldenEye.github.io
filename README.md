@@ -1,19 +1,27 @@
 # Table of Contents
 
 * [About GoldenEye](#About-GoldenEye)
+* [Inspiration](#Inspiration)
+* [Features](#Features)
+* [How will it look](#How-will-it-look)
+* [Installation/Deployment](Installation/Deployment)
+* [About/Contact Us](About/Contact-Us)
 
 ## About GoldenEye
 
 Our project submission for the 2017 Hawaii Annual Coding Challenge (HACC)
+
+Team GoldEye is aiming for several features that could benefit those who looking for the statutes.
+
+## Inspiration
 
 Looking for the statutes that will benefit your case but tired of clicking them one by one?
 
 On official Hawai’i Government Website, https://portal.ehawaii.gov/government/hawaii-legislature/hawaii-revised-statutes/, Hawai’i Revised Statutes are opened to public for the good and justice.
 However, despite its openness, the webpage only provides the directories to the contents but any searching methods.
 If the statutes can be searched, displayed, and ordered with relevance, time saving and efficiency will be offered to the public.
-Team GoldEye is aiming for several features that could benefit those who looking for the statutes.
 
-## Such as..
+## Features
 
 * search mechanism based on the code numbers and words.
 
