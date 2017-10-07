@@ -24,6 +24,9 @@ Team GoldEye is aiming for several features that could benefit those who looking
 ![image](/images/picture1.png)
 
 
+![image](/images/picture2.png)
+
+
 # Installation/Deployment
 Laravel is being used as development tool and deployment might also be done through it as well.
 
