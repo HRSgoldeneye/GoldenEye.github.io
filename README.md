@@ -1,11 +1,11 @@
 # Table of Contents
 
-* [About GoldenEye](#About-GoldenEye)
-* [Inspiration](#Inspiration)
-* [Features](#Features)
-* [How will it look](#How-will-it-look)
-* [Installation/Deployment](Installation/Deployment)
-* [About/Contact Us](About/Contact-Us)
+* [About GoldenEye](#about-goldeneye)
+* [Inspiration](#inspiration)
+* [Features](#features)
+* [How will it look](#how-will-it-look)
+* [Installation](installation)
+* [About Us](about-us)
 
 ## About GoldenEye
 
