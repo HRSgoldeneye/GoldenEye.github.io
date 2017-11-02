@@ -13,9 +13,9 @@ Team GoldenEye is one of the participated groups in HACC 2017.
 
 This is our project submission for the 2017 Hawaii Annual Coding Challenge (HACC)
 
-Team GoldEye's goal is to create and implement several features that could benefit those who looking for the Hawaii Revised statutes
+Team GoldEye's goal is to create and implement several features that could benefit those who looking for 
 
-provided by Hawaii State Legislature site.
+the Hawaii Revised statutes provided by Hawaii State Legislature site.
 
 ## Inspiration
 
@@ -42,6 +42,9 @@ If the statutes are clearly formatted and can be searched, displayed, and ordere
 # How will it look
 
 PC View
+![image](/images/pagehome.jpg)
+
+![image](/images/pageabout.jpg)
 
 Mobile View
 ![image](/images/picture1.png)
