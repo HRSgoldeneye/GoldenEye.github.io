@@ -42,13 +42,14 @@ If the statutes are clearly formatted and can be searched, displayed, and ordere
 # How will it look
 
 PC View
-![image](/images/pagehome.jpg)
+
+![image](/images/pagemain.jpg)
 
 ![image](/images/pageabout.jpg)
 
 Mobile View
-![image](/images/picture1.png)
 
+![image](/images/picture1.png)
 
 ![image](/images/picture2.png)
 
