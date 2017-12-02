@@ -61,18 +61,17 @@ First, download the PHP depenedency manager [composer](https://getcomposer.org/)
 ## Directory Structure
 
 ## Import Conventions
+To avoid errors, laravel simplifies import conventions by...
 
 ## Naming Conventions
 
 ## Data Model
 
 ## CSS
+For this project, we used BootStrap 4 that comes by default in laravel.
 
 ## Routing
-
-## Authentication
-
-## Authorization
+In laravel, routing is accomplished using the laravel eloquent.
 
 ## Configuration
 
