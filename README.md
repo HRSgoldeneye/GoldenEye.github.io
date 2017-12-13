@@ -23,7 +23,7 @@
 
 ## About GoldenEye
 
-As part of ICS-491, our group participated in the 2017 Hawaii Annual Coding Challenge and took on the challenge of making the Hawaii Revised Stautes easily accessible. Goldeneye comes from the James Bond movie of the same name. But rather on being a Soviet super weapon, it's an app made to simplify the process of accessing and updating Hawaii's laws.
+As part of ICS-491, our group participated in the 2017 Hawaii Annual Coding Challenge as GoldenEye and took on the challenge of making the Hawaii Revised Stautes easily accessible. Goldeneye comes from the James Bond movie of the same name. But rather on being a Soviet super weapon, it's an app made to simplify the process of accessing and updating Hawaii's laws.
 
 ## Inspiration
 
@@ -33,7 +33,7 @@ On the official Hawai’i Government [Website](https://portal.ehawaii.gov/govern
 
 ## Features
 
-With our team, we plan to use the laravel framework as our foundation to creating a dynamic web application that can be accessed on ac computer or a smart phone. With mysql as our database and using the ElasticSearch package, we want to make common sense search engine that will query results a user expects to see. To increase the long term support of the app, we want to create an easy to use administrative side that allows a layman to maintain the statutes within our app. Along with the other teams creating similar solutions, we collaborated on making a free and open source scrapper that allows other developers to have all the statutes or some parts of it in a simple JSON file.
+With our team, we plan to use the laravel framework as our foundation to creating a dynamic web application that can be accessed on ac computer or a smart phone. With mysql as our database and using the ElasticSearch package, we wanted to make a common sense search engine that will query results a user expects to see. To increase the long term support of the app, we want to create an easy to use administrative side that allows a layman to maintain the statutes within our app. Along with the other teams creating similar solutions, we collaborated on making a free and open source scrapper that allows other developers to have all the statutes or some parts of it in a simple JSON file.
 
 
 # How will it look
@@ -51,10 +51,26 @@ Mobile View
 ![image](/images/picture2.png)
 
 
-# Installation
+# Installation/Contributing to The Project 
 
-For a visual guide on installing laravel and developing: use [laracasts](https://laracasts.com/series/laravel-from-scratch-2017).
-First, download the PHP depenedency manager [composer](https://getcomposer.org/).
+For a free visual guide on installing laravel and developing on it: use [laracasts](https://laracasts.com/series/laravel-from-scratch-2017).
+
+## Setting Up Your Dev Environement
+
+### Downloading VirtualBox
+Download the free Oracle VirtualBox Application [here](https://www.virtualbox.org/wiki/Downloads)
+### Downloading Vagrant
+Download Vagrant [here](https://www.vagrantup.com/downloads.html)
+### Installing Laravel Homestead
+
+### Cloning The Repo
+
+### Populating the Database
+
+### Installing ElasticSearch and Kibana
+
+### Final Steps
+
 
 # Application Design
 
@@ -71,18 +87,15 @@ Eloquent models are simple ways to create an object that reflect something you s
 By default, laravel uses mysql. Migrations are "version control" for your database tables, simplying the act of modifying the database schema. If changes need to be made to tables, the modification in the editor, and the backend mchange can be done with one artisan command.
 
 ## CSS
+
 For this project, we used BootStrap 4 that comes by default in laravel. Bootstrap allows our project to satisfy usuability issues for both web and mobile app users. 
-
-## Routing/Import Conventions
-
-Routing is accomplished using the laravel eloquent.
 
 ## Configuration
 
+The config directory contains configuration settings for laravel packages like authentication, databases, and anything else you include in your application. 
 
 # About Us
-Team GoldenEye is one of the participants in [Hawaii Annual Code Challenge](http://hacc.hawaii.gov/) and 
-the team is formed with two people. 
+Team GoldenEye consists of two students: 
 
 * [Mark Cummins](https://github.com/markrcummins)
 * [Yohan Yang](https://github.com/yohanyang)
@@ -105,4 +118,5 @@ This milestone started on November 6, 2017 and ends on December 1st, 2017. This 
 
 ## DigitalOcean and Laravel Forge Deployment
 
-To test certain features and to meet the requirements of the class, our app is deployed [here](http://165.227.195.48/). Our deployment is made by creating our server on DigitalOcean and managing it with Laravel Forge. 
+To test certain features and to meet the requirements of the class, our [app is deployed here](http://67.205.189.163/). Our deployment is made by creating our server on DigitalOcean and managing it with Laravel Forge. 
+
