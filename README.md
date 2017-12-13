@@ -153,11 +153,11 @@ $ vagrant ssh
 ### Enabling Port Forwarding On The VirtualBox
 Since we'll be using port 9200 and 5601 for ElasticSearch and Kibana, we need to enable port forwarding for them. Open the VirtualBox application, right click on the homestead virtual machine and go to settings. Go to the network tab, click on the down arrow for advanced, and click on port forwarding:
 
-![image](/images/advanced-settings.jpg)
+![image](/images/advanced-settings.png)
 
 Then add the ports 9200 and 5601 to the list by pressing the green plus button
 
-![image](/images/add-ports.jpg)
+![image](/images/add-ports.png)
 
 
 ### Installing ElasticSearch
