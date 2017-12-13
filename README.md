@@ -269,14 +269,70 @@ PUT hawaii-statutes {
 This is the basic mapping of the database, it's highly encouraged to edit and imporove the mapping. 
 
 ### Cloning The Repo
+In the ics-491-goldeneye directory of the vagrant box simply type:
+```
+$ git clone https://github.com/HRSgoldeneye/GoldenEye.git
+```
+
+Once the repo is cloned, you'll want to add a local .env file like so. The .env file is in the ics-491-goldeneye directory:
+```
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=base64:I9Pzssv/YOHVCbfgFOGu05DvFDp4x3x3Z8NSsnPhMNo=
+APP_DEBUG=true
+APP_LOG_LEVEL=debug
+APP_URL=http://localhost
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=goldeneye
+DB_USERNAME=root
+DB_PASSWORD=
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+QUEUE_DRIVER=sync
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+
+
+SCOUT_DRIVER=elasticsearch
+```
+
+Once that's done, do a composer install and update so that all dependencies are installed and updated:
+```
+$ composer install
+$ composer update
+```
 
 ### Populating the Database
 
+To populate the database with the JSON file already included, simply go to artisan tinker and run the function:
 
+```
+php artisan tinker
+\App\Libraries\JSONPersister::persist()
+```
 
 
 ### Final Steps
 
+If all goes well, you should be able to go to ics-491-goldeneye.app, do searches, and start developing!
 
 # Application Design
 
