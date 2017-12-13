@@ -29,11 +29,11 @@
 
 ## About GoldenEye
 
-As part of ICS-491, our group participated in the 2017 Hawaii Annual Coding Challenge as GoldenEye and took on the challenge of making the Hawaii Revised Stautes easily accessible. Goldeneye comes from the James Bond movie of the same name. But rather on being a Soviet super weapon, it's an app made to simplify the process of accessing and updating Hawaii's laws.
+As part of ICS-491, our group participated in the 2017 Hawaii Annual Coding Challenge as GoldenEye and took on the challenge of making the Hawaii Revised Statutes easily accessible. Goldeneye comes from the James Bond movie of the same name. But rather on being a Soviet super weapon, it's an app made to simplify the process of accessing and updating Hawaii's laws.
 
 ## Inspiration
 
-Besides a great challenge, the current problems with accessing the statutes is that it's very tedious looking through the statutes. With over 20,000 sections, there is no database and no way to search for a particular statute or section. There's also no way to cross reference another statute if it's listed in another staute. 
+Besides a great challenge, the current problems with accessing the statutes is that it's very tedious looking through the statutes. With over 20,000 sections, there is no database and no way to search for a particular statute or section. There's also no way to cross reference another statute if it's listed in another statute. 
 
 On the official Hawai’i Government [Website](https://portal.ehawaii.gov/government/hawaii-legislature/hawaii-revised-statutes/), the statutes are on a file server. This means that it's another obstacle to update or edit statutes. Currently, the statutes are officially updated once a year. With this slow process, there is no consistency and typos are common for some statutes.
 
