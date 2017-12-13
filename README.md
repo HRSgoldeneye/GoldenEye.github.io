@@ -38,16 +38,26 @@ With our team, we plan to use the laravel framework as our foundation to creatin
 
 ![image](/images/homepage.png)
 
+At the home page, a user can start searching for sections that realate to their input.
+
 ![image](/images/socialmedia.png)
+
+Because HRS Goldeneye is a dynamic web app, users can share a statute to someone by email and facebook.
 
 ![image](/images/search.png)
 
+
 ![image](/images/search-results.png)
+
+Relevant searches show their section name and the respective section number.
 
 ![image](/images/statute.png)
 
+When a user clicks on a search result, it'll take them to the whole statute, allowing the user to read the entire statute or particular sections they find interesting. 
+
 ![image](/images/sections.png)
 
+All the sections are nicely collapsible (as some sections are very lengthy) allowing a user to easily manuver through a statute. 
 
 # Installation/Contributing to The Project 
 
