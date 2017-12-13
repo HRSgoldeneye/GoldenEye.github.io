@@ -62,7 +62,21 @@ Download the free Oracle VirtualBox Application [here](https://www.virtualbox.or
 ### Downloading Vagrant
 Download Vagrant [here](https://www.vagrantup.com/downloads.html)
 ### Installing Laravel Homestead
+Clone the latest version of [Laravel Homestead](https://github.com/laravel/homestead/releases) and be sure to keep track of what version you downloaded. 
+```
+$ git clone https://github.com/laravel/homestead.git homestead
+```
+The last part of the command is the name of directory the repo will be cloned into. Go into that directory and checkout the latest version number.
+```
+$ cd homestead
+$ git checkout v7.1.0
+```
+As of writing this, version 7.1.0 was the newest one.
 
+After checking out homestead, initialize it using:
+```
+$ bash init.sh
+```
 ### Cloning The Repo
 
 ### Populating the Database
