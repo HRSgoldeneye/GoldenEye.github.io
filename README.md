@@ -77,6 +77,65 @@ After checking out homestead, initialize it using:
 ```
 $ bash init.sh
 ```
+
+Then edit your Homestead.yml file:
+```
+---
+ip: "192.168.10.11"
+memory: 2048
+cpus: 1
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: /Users/MarkCummins/Desktop/github/ics-491-goldeneye
+      to: /home/vagrant/Code/ics-491-goldeneye
+
+sites:
+    - map: ics-491-goldeneye.app
+      to: /home/vagrant/Code/ics-491-goldeneye/public
+
+databases:
+    - goldeneye
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp
+```
+
+The only line that will be different in your Homestead.yml file is the folders map. That will be where ever you want to put the repo of the project on your local machine.
+
+To make it so that the virtual machine points toics-491-goldeneye.app, simply do (For Mac):
+```
+$ sudo pico /etc/hosts
+```
+Add a line relating the ip address we had in Homestead.yml to the site mapping:
+```
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+192.168.10.11 ics-491-goldeneye.app
+```
+
 ### Cloning The Repo
 
 ### Populating the Database
