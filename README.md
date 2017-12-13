@@ -29,7 +29,7 @@ As part of ICS-491, our group participated in the 2017 Hawaii Annual Coding Chal
 
 Besides a great challenge, the current problems with accessing the statutes is that it's very tedious looking through the statutes. With over 20,000 sections, there is no database and no way to search for a particular statute or section. There's also no way to cross reference another statute if it's listed in another staute. 
 
-On the official Hawai’i Government Website, https://portal.ehawaii.gov/government/hawaii-legislature/hawaii-revised-statutes/, the statutes are on a file server. This means that it's another obstacle to update or edit statutes. Currently, the statutes are officially updated once a year. With this slow process, there is no consistency and typos are common for some statutes.
+On the official Hawai’i Government [Website](https://portal.ehawaii.gov/government/hawaii-legislature/hawaii-revised-statutes/), the statutes are on a file server. This means that it's another obstacle to update or edit statutes. Currently, the statutes are officially updated once a year. With this slow process, there is no consistency and typos are common for some statutes.
 
 ## Features
 
@@ -58,20 +58,24 @@ First, download the PHP depenedency manager [composer](https://getcomposer.org/)
 
 # Application Design
 
-## Directory Structure
+## Blade Files
 
-## Import Conventions
-To avoid errors, laravel simplifies import conventions by...
+Webpages are constructed as blade files. Blade files allow you to have your HTML call your PHP functions and have them interact with your models and routes while the logic is stowed away in your Controllers. All blade files are located in the /resources/views directory. For organization, it's recommded to put all the layout HTML into a separate layout directory and your web pages into a pages directory within the views directory.
 
-## Naming Conventions
+## Eloquent Models
 
-## Data Model
+Eloquent models are simple ways to create an object that reflect something you store in your database. Models make it easy to query data and insert new records into your database tables. By convention, your model is the singular version of the class while your database will use the plural version for the table. For our project, models were made for the divisions, titles, statutes, and sections of the data while creating relationships for them.
+
+## Database
+
+By default, laravel uses mysql. Migrations are "version control" for your database tables, simplying the act of modifying the database schema. If changes need to be made to tables, the modification in the editor, and the backend mchange can be done with one artisan command.
 
 ## CSS
-For this project, we used BootStrap 4 that comes by default in laravel.
+For this project, we used BootStrap 4 that comes by default in laravel. Bootstrap allows our project to satisfy usuability issues for both web and mobile app users. 
 
-## Routing
-In laravel, routing is accomplished using the laravel eloquent.
+## Routing/Import Conventions
+
+Routing is accomplished using the laravel eloquent.
 
 ## Configuration
 
