@@ -135,12 +135,67 @@ Add a line relating the ip address we had in Homestead.yml to the site mapping:
 ::1             localhost
 192.168.10.11 ics-491-goldeneye.app
 ```
+### Configuring Vagrant
+Once you're done editing the files, the next step is to add laravel homestead to Vagrant with:
+```
+$ vagrant box add laravel/homestead
+```
+This will download the LAMP stack into your virtualbox, giving you all the things you need to develop your laravel app in the virtual machine. Be sure to press whichever button that says virtualbox when it's installing.
+
+Our machine is all set, now we have to bring it up using the command:
+```
+$ vagrant up
+```
+Then ssh into your vagrant box using the command:
+```
+$ vagrant ssh
+```
+### Enabling Port Forwarding On The VirtualBox
+Since we'll be using port 9200 and 5601 for ElasticSearch and Kibana, we need to enable port forwarding for them. Open the VirtualBox application, right click on the homestead virtual machine and go to settings. Go to the network tab, click on the down arrow for advanced, and click on port forwarding:
+
+![image](/images/advanced-settings.jpg)
+
+Then add the ports 9200 and 5601 to the list by pressing the green plus button
+
+![image](/images/add-ports.jpg)
 
 ### Cloning The Repo
 
 ### Populating the Database
 
 ### Installing ElasticSearch and Kibana
+The first step to installing ElasticSearch is to get the public key:
+```
+$ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+```
+
+Then add the ElasticSearch repository:
+```
+$ echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
+```
+Then add the required repositories:
+```
+$ sudo apt-get update
+$ sudo apt-get install default-jdk
+$ sudo apt-get install elasticsearch
+```
+To start and stop ElasticSearch, type:
+```
+$ sudo systemctl start elasticsearch
+$ sudo systemctl stop elasticsearch
+```
+Now we have to edit some settings in ElasticSearch. Simply edit the lines in:
+```
+$ sudo pico /etc/elasticsearch/elasticsearch.yml
+```
+
+```
+cluster.name: elasticsearch_cluster
+node.name: elasticsearch_homestead
+network.host: 0.0.0.0
+```
+
+
 
 ### Final Steps
 
