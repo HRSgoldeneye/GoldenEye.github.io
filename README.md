@@ -159,11 +159,8 @@ Then add the ports 9200 and 5601 to the list by pressing the green plus button
 
 ![image](/images/add-ports.jpg)
 
-### Cloning The Repo
 
-### Populating the Database
-
-### Installing ElasticSearch and Kibana
+### Installing ElasticSearch
 The first step to installing ElasticSearch is to get the public key:
 ```
 $ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
@@ -194,6 +191,87 @@ cluster.name: elasticsearch_cluster
 node.name: elasticsearch_homestead
 network.host: 0.0.0.0
 ```
+### Installing Kibana
+Kibana is a web ui that allows you to easily manage your ElastiSearch cluster and nodes. To install it, simply type the command:
+
+```
+$ sudo apt-get install kibana
+```
+
+Then configure some settings in kibana by doing:
+```
+$ sudo pico /etc/kibana/kibana.yml
+```
+Then change the line:
+```
+server.host: "0.0.0.0" 
+```
+and add this line at the bottom:
+```
+xpack.securityenabled: false
+```
+Then run the commands:
+```
+$ sudo /bin/systemctl daemon-reload
+$ sudo /bin/systemctl enable kibana.service
+$ sudo /bin/systemctl start kibana.service
+```
+
+When you start ElasticSearch and Kibana, you should be able to type "0.0.0.0:5601" into your browser and the kibana browser interface should show up.
+
+### Configuring ElasticSearch Mapping
+
+With the kibana app running, go to the console in dev tools and put in:
+
+```
+PUT hawaii-statutes {
+  {
+    "mappings": {
+      "sections": {
+        "properties": {
+          "id": {
+            "type": "long"
+          },
+          "section_name": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              }
+            }
+          },
+          "section_number": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "statute_id": {
+            "type": "integer"
+          },
+          "text": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+```
+
+This is the basic mapping of the database, it's highly encouraged to edit and imporove the mapping. 
+
+### Cloning The Repo
+
+### Populating the Database
+
 
 
 
