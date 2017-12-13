@@ -3,10 +3,19 @@
 * [About GoldenEye](#about-goldeneye)
 * [Inspiration](#inspiration)
 * [Features](#features)
-* [How will it look](#how-will-it-look)
-* [Installation](#installation)
-* [Application design](#application-design)
-  * [Directory structure](#directory-structure)
+* [Installation/Dev Environment](#installation/dev-environment)
+  * [Downloading VirtualBox](#downloading-virtualbox)
+  * [Downloading Vagrant](#downloading-vagrant)
+  * [Installing Laravel Homestead](#installing-laravel-homestead)
+  * [Configuring Vagrant](#configuring-vagrant)
+  * [Enabling Port Forwarding On The VirtualBox](#enabling-port-forwarding-on-the-virtualbox)
+  * [Installing ElasticSearch](#installing-elasticsearch)
+  * [Installing Kibana](#installing-kibana)
+  * [Configuring ElasticSearch Mapping](#configuring-elasticsearch-mapping)
+  * [Cloning The Repo](#cloning-the-repo)
+  * [Populating the Database](#popoulating-the-database)
+  * [Final Steps](#final-steps)
+* [Application Design](#application-design)
   * [Import conventions](#import-conventions)
   * [Naming conventions](#naming-conventions)
   * [Data model](#data-model)
@@ -63,7 +72,6 @@ All the sections are nicely collapsible (as some sections are very lengthy) allo
 
 For a free visual guide on installing laravel and developing on it: use [laracasts](https://laracasts.com/series/laravel-from-scratch-2017).
 
-## Setting Up Your Dev Environement
 
 ### Downloading VirtualBox
 Download the free Oracle VirtualBox Application [here](https://www.virtualbox.org/wiki/Downloads)
